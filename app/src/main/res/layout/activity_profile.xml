@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.Profile"
+    android:theme="@style/AppTheme.Profile"
+    android:background="@drawable/bg"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:src="@drawable/ic_share"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:tint="@color/ungu"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <ImageView
+           android:layout_marginTop="10dp"
+           android:src="@drawable/udin"
+           android:layout_width="match_parent"
+           android:layout_height="280dp" />
+
+       <ImageView
+           android:src="@drawable/judul"
+           android:layout_width="match_parent"
+           android:layout_height="75dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/about"
+                android:src="@drawable/ic_release"
+                android:padding="10dp"
+                android:background="@drawable/circle_btn"
+                android:layout_centerInParent="true"
+                android:tint="@color/ungu"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+
+            <ImageView
+                android:id="@+id/release"
+                android:src="@drawable/ic_warning"
+                android:padding="10dp"
+                android:background="@drawable/circle_btn"
+                android:layout_toLeftOf="@id/about"
+                android:tint="@color/ungu"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+
+            <ImageView
+                android:id="@+id/fav"
+                android:src="@drawable/ic_fav"
+                android:padding="10dp"
+                android:background="@drawable/circle_btn"
+                android:layout_toRightOf="@id/about"
+                android:tint="@color/ungu"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:background="@drawable/btn_share"
+            android:src="@drawable/ic_edit"
+            android:layout_weight="0.1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:text="Harry Sunaryo (Programmer) dan Septina Mayanti (Narator)"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:textSize="19dp"
+            android:layout_weight="1"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/btn_share"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
